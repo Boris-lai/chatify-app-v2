@@ -32,7 +32,7 @@ function App() {
           element={authUser ? <ChatPage /> : <Navigate to={"/login"} />}
         />
         <Route
-          path="login"
+          path="/login"
           element={!authUser ? <LoginPage /> : <Navigate to={"/"} />}
         />
         <Route
